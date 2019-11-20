@@ -82,8 +82,6 @@ initial_list = []
 
 # print('Meeting Place',x,'Arabella',y)
 
-
-
 # Take album name
 # use to navigate to web page. 
 # For each song take a text file and write lyrics to it
@@ -177,11 +175,11 @@ for song in song_list:
     song_html = BeautifulSoup(content,'html.parser')
     # file_name = song_html.find('title') + '.txt'
     song = song_html.find('title').getText()
-    song = song.strip()
-    song = song.replace('|','')
-    song = song.replace(' – ',' ')
-    song = song.replace(' Genius' ,'')
-    song = song.replace(' Lyrics' ,'')
+    # song = song.strip()
+    # song = song.replace('|','')
+    # song = song.replace(' – ',' ')
+    # song = song.replace(' Genius' ,'')
+    # song = song.replace(' Lyrics' ,'')
     print(song)
 
 # maybe it would be best to get the artist and album name and menually put it in the correct format for latter usedsafd
